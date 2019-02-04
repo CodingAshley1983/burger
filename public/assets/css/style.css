@@ -1,0 +1,44 @@
+
+    body {background-color: purple;}
+    h1{
+        color: white;
+    }
+    .image-container{
+        display:flex;
+    }
+    #image {
+        height: 250px; 
+        width: 250px; 
+        justify-content: center; 
+        margin: 0 auto;
+        }
+
+    img{height:250px; width:250px;}
+    .main{
+        margin: 0 auto;
+        background-color:white;
+        font-size: 14px;
+        width: 60%;
+        height: 100px;
+    }
+    #burgerRepo{
+        margin-top:25px;
+        display: flex;
+         margin: 0 auto;
+        background-color:white;
+        font-size: 14px;
+        width: 60%;
+        height: 200px;
+
+    }
+    #first{
+     justify-content: flex-start;
+    
+
+    }
+       #devoured{
+        justify-content: flex-end;
+      
+
+    }
+   

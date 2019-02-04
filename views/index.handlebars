@@ -1,0 +1,58 @@
+<h1 style="text-align:center">Eat da Burger!</h1>
+<div class="container" class="image-container">
+	<div class="row" id="image">
+		<img src="https://www.tasteofhome.com/wp-content/uploads/2017/10/exps28800_UG143377D12_18_1b_RMS-696x696.jpg">
+	</div>
+</div>
+
+
+
+
+
+<!-- end .row -->
+<div class="main">
+	<h2>Add Your Burger</h2>
+	<form class="create-form">
+
+		<div class="form-group">
+			<label for="burger">Burger Name:</label>
+			<input type="text" id="burger" name="text">
+			<button type="submit" id="submit">Add Burger</button>
+	</form>
+
+
+</div>
+<hr>
+
+
+<!-- end .row -->
+
+<div class="container" id="burgerRepo">
+	<div class="row">
+		<div class="col-6" id="first">
+			<h4>New Burgers:</h4>
+			<div>
+				<ul>
+					{{#each burgers}}
+					{{#unless this.completed}}
+					{{/unless}}
+					{{/each}}
+
+				</ul>
+			</div>
+		</div>
+		<div class="col-6" id="devoured">
+			<h4>Devoured burgers</h4>
+			<ul>
+				{{#each burgers}}
+				{{#if completed}}
+				<li>
+					{{id}}
+					{{text}}
+				</li>
+				{{/if}}
+				{{/each}}
+			</ul>
+		</div>
+	</div>
+</div>
